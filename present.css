@@ -1,0 +1,153 @@
+body {
+    color: #88c5c0; 
+    background-color: #005c85;
+    width: 100%;
+}
+a:any-link{
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
+.page {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* entête de page */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #005c85;
+}
+.logo {
+    background-image: url("./Images/logo.png");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20%;
+}
+.titre {
+    width: 60%;
+    text-align: center;
+    color: #88c5c0;
+}
+.burger {
+    width: 20%;
+}
+
+/* Corps de la page */
+main {
+    width: 100%;
+    background-color: #005c85;
+    display: block;
+    color: #88c5c0;
+}
+.menu1 {
+    display: none;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding:0;
+    margin:0;
+    list-style: none;
+    width:100%;
+}
+.menu ul {
+    position: absolute;
+    padding:0;
+    margin:0;
+    list-style: none;
+    width:100px;
+}
+.menu li {
+    position:relative;
+}
+.s-s-menu {
+    position:absolute;
+    left: 100px;
+    top:0
+}
+.s-menu li, .menu li:hover li .s-s-menu li {
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0s
+}
+.menu li:hover .s-menu li, .menu li li:hover .s-s-menu li {
+    max-height:15em;
+    overflow:visible;
+    transition:max-height 0.8s
+}
+.menu a {
+    text-decoration: none;
+    display:block;
+    background: #333;
+    color:#fff;
+    font-family:arial;
+    padding:3px
+}
+/* Accordéon */
+#accordionExample {
+    display: flex;
+    flex-direction: column;
+    /*border: 2px solid whitesmoke;*/
+    padding: 20px;
+    margin: 10px;
+  }
+  .card {
+    /*border: 1px solid  gray;*/
+    /*padding: 10px 20px 10px 20px;*/
+    border-radius: 2px;
+  }
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  button {
+    border: 0;
+    background-color: lightgray;
+  }
+  button:hover {
+    cursor: pointer;
+    color: #005c85;
+  }
+  .card-body {
+    padding: 10px;
+    border: 1px solid gray;
+    border-top: 0;
+    /*border-bottom: 0;*/
+  }
+  .card-header {
+    padding: 10px 20px 10px 20px;
+    background-color: lightgray;
+    border: 1px solid gray;
+  }
+  #collapseOne {
+    display: block;
+  }
+  #collapseTwo {
+    display: none;
+  }
+  #collapseThree {
+    display: none;
+  }
+  .certificats {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+/* Pied de page */
+footer {
+    display: flex;
+    color: #88c5c0; 
+    background-color: #005c85;
+    width: 100%;
+}
