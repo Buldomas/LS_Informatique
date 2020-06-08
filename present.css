@@ -38,8 +38,18 @@ header {
 }
 .burger {
     width: 20%;
+    text-align: right;
+    background-image: url("./Images/Avatar3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
+.flexIllustrator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 /* Corps de la page */
 main {
     width: 100%;
@@ -47,51 +57,7 @@ main {
     display: block;
     color: #88c5c0;
 }
-.menu1 {
-    display: none;
-}
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding:0;
-    margin:0;
-    list-style: none;
-    width:100%;
-}
-.menu ul {
-    position: absolute;
-    padding:0;
-    margin:0;
-    list-style: none;
-    width:100px;
-}
-.menu li {
-    position:relative;
-}
-.s-s-menu {
-    position:absolute;
-    left: 100px;
-    top:0
-}
-.s-menu li, .menu li:hover li .s-s-menu li {
-    max-height:0;
-    overflow:hidden;
-    transition:max-height 0s
-}
-.menu li:hover .s-menu li, .menu li li:hover .s-s-menu li {
-    max-height:15em;
-    overflow:visible;
-    transition:max-height 0.8s
-}
-.menu a {
-    text-decoration: none;
-    display:block;
-    background: #333;
-    color:#fff;
-    font-family:arial;
-    padding:3px
-}
+
 /* Accordéon */
 #accordionExample {
     display: flex;
@@ -130,12 +96,28 @@ main {
   }
   #collapseOne {
     display: block;
+    overflow: hidden;
+    height: auto;
+  }
+  .collapse {
+    transform: scaleX(1);
+    transition: all;
+    transition-delay: 0.3s;
   }
   #collapseTwo {
-    display: none;
+    display: block;
+    overflow: hidden;
+    height: 0;
   }
   #collapseThree {
-    display: none;
+    display: block;
+    overflow: hidden;
+    height: 0;
+  }
+  #collapseFour {
+    display: block;
+    overflow: hidden;
+    height: 0;
   }
   .certificats {
       width: 100%;
