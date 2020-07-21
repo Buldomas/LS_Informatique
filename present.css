@@ -30,6 +30,10 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-clip: content-box;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-style: ridge;
+	border-bottom-color: rgba(123, 151, 174, 0.8);
 }
 .logo {
 	background-image: url("./Images/logo.png");
@@ -56,6 +60,13 @@ header {
 	flex-direction: row;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+}
+.flexIllustrator img,
+.certificats img {
+	border: #88c5c0 1px solid;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 3px 2px 2px rgba(123, 151, 174, 0.8);
 }
 /* Corps de la page */
 main {
@@ -108,6 +119,10 @@ button:hover {
 	border-top: 0;
 	/*border-bottom: 0;*/
 }
+.card-body li {
+	list-style-type: none;
+	list-style-image: radial-gradient(ellipse at 100%, #e66465, #9198e5);
+}
 .card-header {
 	padding: 10px 20px 10px 20px;
 	background-color: lightgray;
@@ -119,9 +134,9 @@ button:hover {
 	height: auto;
 }
 .collapse {
-	transform: scaleX(1);
-	transition: all;
-	transition-delay: 0.3s;
+	/*transform: scaleX(1);*/
+	transition: all 1s ease-in-out;
+	/*transition-delay: 0.3s;*/
 }
 #collapseTwo {
 	display: block;
