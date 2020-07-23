@@ -134,7 +134,7 @@ button:hover {
 	height: auto;
 }
 .collapse {
-	/*transform: scaleX(1);*/
+	transform: scaleY(1);
 	transition: all 1s ease-in-out;
 	/*transition-delay: 0.3s;*/
 }
